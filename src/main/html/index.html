@@ -48,8 +48,9 @@
       if(window.SwaggerTranslator) {
         window.SwaggerTranslator.translate();
       }
+
       window.swaggerUi = new SwaggerUi({
-        url: url,
+        url: 'https://majority-vote.herokuapp.com/swagger_doc',
         dom_id: "swagger-ui-container",
         supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
         onComplete: function(swaggerApi, swaggerUi){
